@@ -64,6 +64,7 @@
     "node_modules",
     "babel.config.js",
     "metro.config.js",
-    "jest.config.js"
+    "jest.config.js",
+    "server/*" // Make sure this is removed when you do something proper
   ]
 }

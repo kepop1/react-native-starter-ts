@@ -68,9 +68,8 @@ export const Login = () => {
       )
 
       if (response.status === 200) {
-        setAuthToken(response.data.authToken)
-
         // This will trigger te authToken conditional and switch to the AppNavigator.
+        setAuthToken(response.data.token)
       }
 
       return response
@@ -98,6 +97,7 @@ export const Login = () => {
             autoCapitalize="none"
             keyboardType="email-address"
             autoFocus
+            autoCorrect={false}
           />
         )}
       />

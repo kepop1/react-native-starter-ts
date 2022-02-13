@@ -20,6 +20,7 @@ type TextInputParams = {
   autoFocus?: boolean
   styleOverride?: TextStyle
   secureTextEntry?: boolean
+  autoCorrect?: boolean
 }
 
 export const TextInput = ({
@@ -30,6 +31,7 @@ export const TextInput = ({
   keyboardType,
   value,
   autoFocus,
+  autoCorrect,
   secureTextEntry,
   styleOverride,
 }: TextInputParams) => {
@@ -43,6 +45,7 @@ export const TextInput = ({
       keyboardType={keyboardType}
       value={value}
       autoFocus={autoFocus}
+      autoCorrect={autoCorrect}
       secureTextEntry={secureTextEntry}
     />
   )

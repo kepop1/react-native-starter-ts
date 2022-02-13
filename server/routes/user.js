@@ -75,7 +75,6 @@ router.post('/login', async (req, res) => {
       .status(404)
       .json({ success: false, message: 'This user does not exist' })
 
-  console.log('eh?', { user })
   // Check that the password sent in is valid
   const validPassword = await bcrypt.compare(password, user.password)
 

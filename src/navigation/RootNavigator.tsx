@@ -15,7 +15,7 @@ const RootNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {true ? (
+        {authToken ? (
           <Stack.Screen name={ROUTE_APP} component={AppNavigator} />
         ) : (
           <Stack.Screen name={ROUTE_AUTH} component={AuthNavigator} />

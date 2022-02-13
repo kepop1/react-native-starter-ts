@@ -64,10 +64,7 @@ export const Register = () => {
       )
 
       if (response.status === 201) {
-        navigation.navigate({
-          key: ROUTE_LOGIN,
-          params: { email: response.data.email },
-        })
+        navigation.navigate(ROUTE_LOGIN, { email })
       }
 
       return response
@@ -113,6 +110,7 @@ export const Register = () => {
             value={value}
             autoCapitalize="none"
             keyboardType="email-address"
+            autoCorrect={false}
           />
         )}
       />

@@ -1,4 +1,7 @@
-const BASE_URL = 'http://localhost:4000'
+import { Platform } from 'react-native'
+
+const BASE_URL =
+  Platform.OS === 'android' ? 'http://10.0.2.2:4000' : 'http://localhost:4000'
 
 export const LOGIN_URL = `${BASE_URL}/login`
 export const REGISTER_URL = `${BASE_URL}/register`

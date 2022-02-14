@@ -5,11 +5,11 @@ import { Main } from '../loggedIn/main/Main'
 
 import { ROUTE_MAIN } from './constants'
 
-export type AuthStackParamList = {
+export type AppStackParamList = {
   [ROUTE_MAIN]: undefined
 }
 
-const Stack = createNativeStackNavigator<AuthStackParamList>()
+const Stack = createNativeStackNavigator<AppStackParamList>()
 
 export const AppNavigator = () => (
   <Stack.Navigator>

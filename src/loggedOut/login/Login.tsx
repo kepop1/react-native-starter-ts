@@ -2,16 +2,15 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native'
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { useForm, Controller, SubmitHandler } from 'react-hook-form'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { LOGIN_URL, getRequestHeaders } from '../../api/config'
 import { Button, TextButton, TextInput, Core, Font } from '../../lib'
-
 import { ROUTE_REGISTER } from '../../navigation/constants'
-import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import type { AuthStackParamList } from '../../navigation/AuthNavigator'
 import { useAuth } from '../../stores/auth'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 type LoginFormValues = {
   email: string

@@ -2,15 +2,14 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { useForm, Controller, SubmitHandler } from 'react-hook-form'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { REGISTER_URL, getRequestHeaders } from '../../api/config'
 import { Button, TextButton, TextInput, Core, Font } from '../../lib'
-
 import { ROUTE_LOGIN } from '../../navigation/constants'
-import type { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import type { AuthStackParamList } from '../../navigation/AuthNavigator'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 type RegisterFormValues = {
   firstName: string

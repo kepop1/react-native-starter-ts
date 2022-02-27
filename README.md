@@ -10,6 +10,26 @@ This hopefully exists as a _"living document"_ in the sense that as popular patt
 
 To be honest it exists to fill that gap when you want to start a new side project / hobby project where you have that cracking idea but you say: **"I really can't be bothered setting everything up and putting boilerplate in... "**
 
+## Quick Commands
+
+Commands to run the app, for information see [Getting Started](#getting-started)
+
+- In one terminal tab (for the metro bundler):
+
+  ```bash
+  yarn packager
+  ```
+
+- In the other terminal tab (to run the app):
+  - iOS:
+    ```
+    yarn ios
+    ```
+  - Android:
+    ```
+    yarn android
+    ```
+
 ## Getting Started
 
 For the love of god, follow everything here: https://facebook.github.io/react-native/docs/getting-started
@@ -51,10 +71,10 @@ This starter will setup you up with a project has:
 7. React Hook Form
 8. Basic screens / Navigation
 9. TypeScript (Nothing too scary)
+10. TypeScript Jest & React Native Testing Library
 
 In the future maybe? :thinking:
 
-- Jest (Unit & Integration Tests) / ts-jest too.
 - Detox/Appium (E2E tests)
 - Fastlane?
 - Analytics?
@@ -87,6 +107,7 @@ In the future maybe? :thinking:
 - You're ok with having a font added by default, as it can be a quirk to setup and it'll show you where it needs to go.
 - You're ok with TypeScript / React Hook Form -> These are probably the most opinionated parts. TS is in here for a laundry list of reasons.
   - React Hook Form however is a lighter alternative to Formik which is kinda heavy - but has it's own downsides, this at the least makes it functional for basic forms.
+- You're ok with ts-jest for TypeScript backed testing, and react-native-testing-library for rendering the components for tests.
 
 ### Generating screenshots?
 

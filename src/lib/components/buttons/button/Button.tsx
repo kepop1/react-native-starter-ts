@@ -6,8 +6,8 @@ import {
   ViewStyle,
   TextStyle,
 } from 'react-native'
-import { Core } from '../../Core'
-import { Font } from '../../Font'
+import { Core } from '../../../Core'
+import { Font } from '../../../Font'
 
 type ButtonProps = {
   onPress: () => void

@@ -108,6 +108,7 @@ In the future maybe? :thinking:
 - You're ok with TypeScript / React Hook Form -> These are probably the most opinionated parts. TS is in here for a laundry list of reasons.
   - React Hook Form however is a lighter alternative to Formik which is kinda heavy - but has it's own downsides, this at the least makes it functional for basic forms.
 - You're ok with ts-jest for TypeScript backed testing, and react-native-testing-library for rendering the components for tests.
+  - The tests here are also focused on the behaviour of the components as opposed to strictly checking data / display rendering.
 
 ### Generating screenshots?
 
